@@ -10,7 +10,7 @@ class Mychart extends StatelessWidget {
       alignment: Alignment.center,
       children: [
       //title
-      Text("خرج های شما",style: TextStyle(fontSize: 20),),
+      const Text("خرج های شما",style: TextStyle(fontSize: 20),),
       //data
       PieChart(
       swapAnimationDuration: const Duration(milliseconds: 750),
@@ -20,23 +20,12 @@ class Mychart extends StatelessWidget {
         sections:[ PieChartSectionData(
           value: 30,
           color: Colors.blue
-        ),PieChartSectionData(
-          value: 20,
-          color: Colors.red
-        ),
-        PieChartSectionData(
-          value: 20,
-          color: Colors.green
-        ),
-        PieChartSectionData(
-          value: 20,
-          color: Colors.amber
-        ),
-        PieChartSectionData(
-          value: 20,
-          color: Colors.black
-        )],
+        ),],
       ),
+      ),
+      Padding(
+        padding: const EdgeInsets.only(top: 700,left: 270),
+        child: FloatingActionButton(onPressed: (){},child: const Icon(Icons.add),),
       )
     ],);
   }
