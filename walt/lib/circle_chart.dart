@@ -10,7 +10,7 @@ class Mychart extends StatelessWidget {
       alignment: Alignment.center,
       children: [
       //title
-      const Text("خرج های شما",style: TextStyle(fontSize: 20),),
+      const Text("خرج های ما",style: TextStyle(fontSize: 20),),
       //data
       PieChart(
       swapAnimationDuration: const Duration(milliseconds: 750),
